@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.demo * { 
+  display: block;
+  border: 2px solid red;
+  color:red;
+  padding: 5px;
+  margin: 15px;
+}
+div {
+    border: 2px solid red;
+    margin: 5px;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+  $("span").parents.css({"color": "red", "border": "2px solid red"});
+});
+</script>
+</head>
+<body class="demo">
+    <div class="parent">
+
+<body class="ancestors" style="color: red; border: 2px solid;"> body (great-great-grandparent)
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span style="color: darkgray; border-color: darkgray;">span</span>
+      </li>
+    </ul>   
+  </div>
+      </div>
+
+</body>
+</body>
+
+</html>
